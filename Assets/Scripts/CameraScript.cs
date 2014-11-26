@@ -1,4 +1,4 @@
-﻿// By: Sarah
+﻿// By: Sarah Omar
 
 using UnityEngine;
 using System.Collections;
