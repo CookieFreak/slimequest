@@ -5,7 +5,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 3
+  serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1002 &100001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -30,6 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!1002 &400001
 EditorExtensionImpl:
   serializedVersion: 6
@@ -41,8 +42,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 1}
+  m_Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   textures: []
   textureRefs: []
   spriteSheets: []
@@ -57,6 +59,7 @@ MonoBehaviour:
   - name: 
     spriteCollection: {fileID: 0}
   managedSpriteCollection: 0
+  linkParent: {fileID: 0}
   loadable: 0
   atlasFormat: 0
   maxTextureSize: 1024
@@ -75,7 +78,7 @@ MonoBehaviour:
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 17a4fe5393d6f6048b0a96839cd54591, type: 1}
+    texture: {fileID: 2800000, guid: 17a4fe5393d6f6048b0a96839cd54591, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 72
@@ -103,6 +106,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 0
+    colliderData: []
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
@@ -115,7 +119,7 @@ MonoBehaviour:
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 731aac236e6d1724fb48cd35227e8998, type: 1}
+    texture: {fileID: 2800000, guid: 731aac236e6d1724fb48cd35227e8998, type: 3}
     materialId: 0
     anchor: 1
     anchorX: 6
@@ -143,6 +147,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 0
+    colliderData: []
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
@@ -155,7 +160,7 @@ MonoBehaviour:
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 871eb2b697bff4f4e832b95668b9b3cc, type: 1}
+    texture: {fileID: 2800000, guid: 871eb2b697bff4f4e832b95668b9b3cc, type: 3}
     materialId: 0
     anchor: 6
     anchorX: 0
@@ -183,6 +188,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 0
+    colliderData: []
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
@@ -195,7 +201,7 @@ MonoBehaviour:
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 75f62f68bfc69b04d876f87672036e09, type: 1}
+    texture: {fileID: 2800000, guid: 75f62f68bfc69b04d876f87672036e09, type: 3}
     materialId: 0
     anchor: 1
     anchorX: 10
@@ -223,6 +229,7 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 0
+    colliderData: []
     boxColliderMin: {x: 0, y: 0}
     boxColliderMax: {x: 0, y: 0}
     polyColliderIslands: []
@@ -238,7 +245,7 @@ MonoBehaviour:
   atlasMaterials:
   - {fileID: 2100000, guid: 8a2dd588da2bb8e44a189a90333944d7, type: 2}
   atlasTextures:
-  - {fileID: 2800000, guid: 657c06b4a37f4bb45a24cc96727be5b8, type: 1}
+  - {fileID: 2800000, guid: 657c06b4a37f4bb45a24cc96727be5b8, type: 3}
   atlasTextureFiles: []
   useTk2dCamera: 0
   targetHeight: 640
@@ -261,12 +268,14 @@ MonoBehaviour:
   physicsEngine: 0
   physicsDepth: .100000001
   disableTrimming: 0
+  disableRotation: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1
   version: 4
   assetName: 
+  linkedSpriteCollections: []
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
