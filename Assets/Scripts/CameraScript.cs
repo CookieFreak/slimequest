@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿// By: Sarah
+
+using UnityEngine;
 using System.Collections;
 
 public class CameraScript : MonoBehaviour 
