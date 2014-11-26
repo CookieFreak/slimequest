@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: dd832faf42601476589afe582b59337b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: slime test_0
+    21300002: slime test_1
+    21300004: slime test_2
+    21300006: slime test_3
+    21300008: slime test_4
+    21300010: slime test_5
+    21300012: slime test_6
+    21300014: slime test_7
+    21300016: slime test_8
+    21300018: slime test_9
+    21300020: slime test_10
+    21300022: slime test_11
+    21300024: slime test_12
+    21300026: slime test_13
+    21300028: slime test_14
+    21300030: slime test_15
+    21300032: slime test_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: slime test_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 21
+        height: 20
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 223
+        width: 18
+        height: 21
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 223
+        width: 15
+        height: 20
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 192
+        width: 21
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 192
+        width: 18
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 192
+        width: 16
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 159
+        width: 21
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 158
+        width: 17
+        height: 21
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 158
+        width: 17
+        height: 21
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 128
+        width: 20
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_10
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 128
+        width: 17
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_11
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 128
+        width: 16
+        height: 19
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 224
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 224
+        width: 19
+        height: 17
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_14
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 223
+        width: 18
+        height: 22
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_15
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 202
+        width: 18
+        height: 21
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: slime test_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 202
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
