@@ -20,6 +20,8 @@ class GridMove : MonoBehaviour {
 	private float t;
 	private float factor = 1;
 
+	public bool stopMovement = false;
+
 	void Start()
 	{
 		animator = this.GetComponent<Animator>();
@@ -27,44 +29,48 @@ class GridMove : MonoBehaviour {
 
 	public void Update() 
 	{
-		if (!isMoving) 
+		if (!stopMovement)
 		{
-			input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-		/*	if (!allowDiagonals) 
-			{*/
-			if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) 
+			if (!isMoving) 
 			{
-				input.y = 0;
-			} else 
-			{
-				input.x = 0;
+				input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+			/*	if (!allowDiagonals) 
+				{*/
+				if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) 
+				{
+					input.y = 0;
+				} else 
+				{
+					input.x = 0;
+				}
+			//	}
+				
+				if (input != Vector2.zero) 
+				{
+					prevPosition = transform.position;
+					StartCoroutine(move(transform));
+				}
 			}
-		//	}
-			
-			if (input != Vector2.zero) 
-			{
-				prevPosition = transform.position;
-				StartCoroutine(move(transform));
-			}
-		}
-
-		var vertical = Input.GetAxis ("Vertical");
-		var horizontal = Input.GetAxis ("Horizontal");
 		
-		if (vertical > 0) {
-			animator.SetInteger ("Direction", 2);
-			animator.SetFloat ("Speed", 1.0f);
-		} else if (vertical < 0) {
-			animator.SetInteger ("Direction", 0);
-			animator.SetFloat ("Speed", 1.0f);
-		} else if (horizontal < 0) {
-			animator.SetInteger ("Direction", 1);
-			animator.SetFloat ("Speed", 1.0f);
-		} else if (horizontal > 0) {
-			animator.SetInteger ("Direction", 3);
-			animator.SetFloat ("Speed", 1.0f);
-		} else {
-			animator.SetFloat ("Speed", 0.0f);
+
+			var vertical = Input.GetAxis ("Vertical");
+			var horizontal = Input.GetAxis ("Horizontal");
+			
+			if (vertical > 0) {
+				animator.SetInteger ("Direction", 2);
+				animator.SetFloat ("Speed", 1.0f);
+			} else if (vertical < 0) {
+				animator.SetInteger ("Direction", 0);
+				animator.SetFloat ("Speed", 1.0f);
+			} else if (horizontal < 0) {
+				animator.SetInteger ("Direction", 1);
+				animator.SetFloat ("Speed", 1.0f);
+			} else if (horizontal > 0) {
+				animator.SetInteger ("Direction", 3);
+				animator.SetFloat ("Speed", 1.0f);
+			} else {
+				animator.SetFloat ("Speed", 0.0f);
+			}
 		}
 	}
 

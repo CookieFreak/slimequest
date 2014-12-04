@@ -88,7 +88,9 @@ function PickUpItem ()
 		if (getit && playersinv.Contents.length < playersinv.MaxContent)
 		{
 			playersinv.AddItem(this.transform);
-			MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+			//MoveMeToThePlayer(playersinv.itemHolderObject);//moves the object, to the player
+			this.active = false;
+			
 		}
 		else if (playersinv.Contents.length >= playersinv.MaxContent)
 		{
