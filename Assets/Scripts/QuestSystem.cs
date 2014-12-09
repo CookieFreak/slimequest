@@ -6,12 +6,13 @@ public class QuestSystem : MonoBehaviour
 	private bool dialogueActive = false;
 	private Rect windowRect = new Rect (0, Screen.height*0.8f, Screen.width, Screen.height*0.2f);
 	private GameObject player;
+	public QuestLog questController;
 	
 	void OnGUI ()
 	{
 		if (dialogueActive)
 		{
-			windowRect = GUI.Window (0,windowRect, DoMyWindow, "");
+			windowRect = GUI.Window (3,windowRect, DoMyWindow, "");
 			player.GetComponent<GridMove>().stopMovement = true;
 		}
 	}
@@ -27,6 +28,8 @@ public class QuestSystem : MonoBehaviour
 		{
 			dialogueActive = false;
 			player.GetComponent<GridMove>().stopMovement = false;
+			questController.quest1 = true;
+
 		}
 	}
 
