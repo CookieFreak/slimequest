@@ -6,6 +6,7 @@ var deleteOnUse = true;
 
 private var playersInv : Inventory;
 private var item : Item;
+public var log : QuestLog;
 
 @script AddComponentMenu ("Inventory/Items/Item Effect")
 @script RequireComponent(Item)
@@ -25,6 +26,11 @@ function Awake ()
 function UseEffect () 
 {
 	Debug.LogWarning("<INSERT CUSTOM ACTION HERE>"); //INSERT CUSTOM CODE HERE!
+	if (item.name == "Health Potion")
+	{
+		Debug.Log("yo");
+		log.quest1 = true;
+	}
 	
 	//Play a sound
 	playersInv.gameObject.SendMessage("PlayDropItemSound", SendMessageOptions.DontRequireReceiver);

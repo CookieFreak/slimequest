@@ -24,11 +24,10 @@ public class QuestSystem : MonoBehaviour
 		GUI.Label(new Rect(10,30,windowRect.width,windowRect.height),"BakBak bakabkabkabkabkabkabakbakbakak!");
 
 		if(GUI.Button(new Rect (windowRect.width *0.8f,windowRect.height*0.8f,windowRect.width*0.1f,windowRect.height*0.1f), "Uhhh...Okay"))
-		//if(GUI.Button(new Rect (0,0,100,30), "Uhhh...Okay"))
 		{
 			dialogueActive = false;
 			player.GetComponent<GridMove>().stopMovement = false;
-			questController.quest1 = true;
+			questController.quest1Get = true;
 
 		}
 	}
