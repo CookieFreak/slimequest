@@ -23,7 +23,7 @@ public class QuestLog : MonoBehaviour
 			if (quest1)
 			{
 				GUI.DrawTexture(new Rect(10,15,questRect.width*0.1f,questRect.height*0.2f), checkboxTicked);
-				GUI.Label (new Rect(25,15,questRect.width,questRect.height*0.3f), "Use the Health Potion.");
+				GUI.Label (new Rect(25,15,questRect.width,questRect.height*0.3f), "Use the Health Potion."); 
 			}
 			 else 
 			{
