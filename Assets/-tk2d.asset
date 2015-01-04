@@ -7030,3 +7030,16 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: Door
+    spriteCollectionGUID: 4e0860f5353c647da977db970b83d46d
+    spriteCollectionDataGUID: cc6021e97f1dc4afba67e1a48b395787
+    spriteNames:
+    - '!Door1'
+    spriteTextureGUIDs:
+    - 43aff605102f641159081f034187b7b2
+    spriteTextureTimeStamps:
+    - 1320537600
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
