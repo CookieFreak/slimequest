@@ -36,6 +36,8 @@ GameObject:
   - 114: {fileID: 11400014}
   - 114: {fileID: 11400012}
   - 61: {fileID: 6100000}
+  - 114: {fileID: 11400018}
+  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: Picaso
   m_TagString: Player
@@ -343,6 +345,37 @@ MonoBehaviour:
   healthBarLength: 0
   manaBarLength: 0
   mySkin: {fileID: 0}
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389c95ca30ab20b4f9cb482cd1b25241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entries:
+  - target: {fileID: 400002}
+    propertyName: position
+  updatesPerSecond: 10
+  isSavedOnServer: 1
+  onlyOwnerCanSync: 1
+  isImportant: 0
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b60cb76d8d8319469ddbb94bac31d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  rebuildMethodList: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

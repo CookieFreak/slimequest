@@ -17,7 +17,7 @@ public class TNAutoCreate : MonoBehaviour
 	/// </summary>
 
 	public GameObject prefab;
-
+	public CameraController cam;
 	/// <summary>
 	/// Whether the instantiated object will remain in the game when the player that created it leaves.
 	/// Set this to 'false' for the player's avatar.
@@ -28,6 +28,8 @@ public class TNAutoCreate : MonoBehaviour
 	void Start ()
 	{
 		TNManager.Create(prefab, transform.position, transform.rotation, persistent);
+
+		cam.target = prefab;
 		Destroy(gameObject);
 	}
 }
