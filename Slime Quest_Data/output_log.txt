@@ -14,21 +14,26 @@ Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Ma
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.052 seconds
+- Completed reload, in  0.381 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.198595 ms
-Tilemap TileMap is still in edit mode. Please fix.Building overhead will be significant.
+UnloadTime: 0.260052 ms
+Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Boo.Lang.dll (this message is harmless)
+No 'Inventory' found in game. The Item Health Potion has been disabled for pickup (canGet = false).
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Boo.Lang.dll (this message is harmless)
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Failed to call function RetrievePlayer of class FirstPersonPickUp
+Calling function RetrievePlayer with no parameters but the function requires 1.
+ 
+(Filename:  Line: 873)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 449.
-Total: 1.636281 ms (FindLiveObjects: 0.013941 ms CreateObjectMapping: 0.007397 ms MarkObjects: 1.262420 ms  DeleteObjects: 0.013372 ms)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 431.
+Total: 2.705511 ms (FindLiveObjects: 0.010527 ms CreateObjectMapping: 0.007397 ms MarkObjects: 2.216419 ms  DeleteObjects: 0.006259 ms)
 
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityScript.Lang.dll (this message is harmless)

@@ -26,7 +26,7 @@ function Awake ()
 	{
 		canGet = false;
 		Debug.LogWarning("No 'Inventory' found in game. The Item " + transform.name + " has been disabled for pickup (canGet = false).");
-	}
+	
 	else
 	{
 		gameObject.SendMessage("RetrievePlayer", playersinv, SendMessageOptions.DontRequireReceiver);

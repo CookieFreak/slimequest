@@ -25,14 +25,14 @@ public class GamePlayer : TNBehaviour
 
 	void Update()
 	{
-		transform.position = Vector3.MoveTowards (transform.position, mTarget, 3f * Time.deltaTime);
+	//	transform.position = Vector3.MoveTowards (transform.position, mTarget, 3f * Time.deltaTime);
 	}
 
-	[RFC(5)]
-	void  OnSetTarget (Vector3 pos)
-	{
-		mTarget = pos;
-	}
+//	[RFC(5)]
+	//void  OnSetTarget (Vector3 pos)
+	//{
+	//	mTarget = pos;
+//	}
 
 	void OnNetworkPlayerJoin (Player p)
 	{

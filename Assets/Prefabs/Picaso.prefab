@@ -38,6 +38,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400018}
   - 114: {fileID: 11400016}
+  - 114: {fileID: 11400020}
   m_Layer: 0
   m_Name: Picaso
   m_TagString: Player
@@ -362,7 +363,7 @@ MonoBehaviour:
   updatesPerSecond: 10
   isSavedOnServer: 1
   onlyOwnerCanSync: 1
-  isImportant: 0
+  isImportant: 1
 --- !u!114 &11400018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,6 +377,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   rebuildMethodList: 1
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc819167765a1e24bafa12264d6558ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

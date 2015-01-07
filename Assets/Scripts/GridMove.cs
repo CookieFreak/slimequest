@@ -26,10 +26,12 @@ class GridMove : MonoBehaviour {
 	{
 		animator = this.GetComponent<Animator>();
 		Camera.main.GetComponent<CameraController>().target = this.gameObject;
+
 	}
 
 	public void Update() 
 	{
+
 		if (!stopMovement)
 		{
 			if (!isMoving) 
