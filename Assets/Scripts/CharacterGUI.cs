@@ -8,9 +8,7 @@ public class CharacterGUI : MonoBehaviour
 	
 	public int maxMana = 50;
 	public float curMana = 50;
-	
-	//public static int curMoney = 0;
-	
+
 	public float healthBarLength;
 	public float manaBarLength;
 	

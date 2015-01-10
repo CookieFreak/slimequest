@@ -12,28 +12,64 @@ Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Ma
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.381 seconds
+- Completed reload, in  0.060 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.260052 ms
-Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Boo.Lang.dll (this message is harmless)
-No 'Inventory' found in game. The Item Health Potion has been disabled for pickup (canGet = false).
+UnloadTime: 0.213392 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 389.
+Total: 2.293537 ms (FindLiveObjects: 0.014226 ms CreateObjectMapping: 0.007113 ms MarkObjects: 1.944712 ms  DeleteObjects: 0.005121 ms)
+
+Health Potion (UnityEngine.GameObject)
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Failed to call function RetrievePlayer of class FirstPersonPickUp
-Calling function RetrievePlayer with no parameters but the function requires 1.
+0.4618947
  
-(Filename:  Line: 873)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+0.4618947
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 431.
-Total: 2.705511 ms (FindLiveObjects: 0.010527 ms CreateObjectMapping: 0.007397 ms MarkObjects: 2.216419 ms  DeleteObjects: 0.006259 ms)
+Health Potion (UnityEngine.GameObject)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+1.879805
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.879805
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Health Potion (UnityEngine.GameObject)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+0.3794509
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+0.3794509
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Health Potion (UnityEngine.GameObject)
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.879805
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.879805
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Crash!!!

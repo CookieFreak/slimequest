@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using UnityEngine;
+using TNet;
 
-class GridMove : MonoBehaviour {
+
+class GridMove : TNBehaviour 
+{
+	static public GridMove instance;
+
 	private float moveSpeed = 0.5f;
 	private float gridSize = 0.32f;
 	private Animator animator;
-	private enum Orientation {
+
+	private enum Orientation 
+	{
 		Horizontal,
 		Vertical
 	};
@@ -22,6 +29,22 @@ class GridMove : MonoBehaviour {
 
 	public bool stopMovement = false;
 
+	Vector3 mTarget = Vector3.zero;
+	public Vector3 target
+	{
+		set
+		{
+			tno.Send(5, TNet.Target.AllSaved,value);
+		}
+	}
+
+	void Awake ()
+	{
+		if(TNManager.isThisMyObject)
+		{
+			instance = this;
+		}
+	}
 	void Start()
 	{
 		animator = this.GetComponent<Animator>();
@@ -29,53 +52,74 @@ class GridMove : MonoBehaviour {
 
 	}
 
+
+
 	public void Update() 
 	{
-
-		if (!stopMovement)
+		if (tno.isMine)
 		{
-			if (!isMoving) 
+			if (!stopMovement)
 			{
-				input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-			/*	if (!allowDiagonals) 
-				{*/
-				if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) 
+				if (!isMoving) 
 				{
-					input.y = 0;
-				} else 
-				{
-					input.x = 0;
+					input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+				/*	if (!allowDiagonals) 
+					{*/
+					if (Mathf.Abs(input.x) > Mathf.Abs(input.y)) 
+					{
+						input.y = 0;
+					} else 
+					{
+						input.x = 0;
+					}
+				//	}
+					
+					if (input != Vector2.zero) 
+					{
+						prevPosition = transform.position;
+						StartCoroutine(move(transform));
+					}
 				}
-			//	}
-				
-				if (input != Vector2.zero) 
-				{
-					prevPosition = transform.position;
-					StartCoroutine(move(transform));
-				}
-			}
-		
-
-			var vertical = Input.GetAxis ("Vertical");
-			var horizontal = Input.GetAxis ("Horizontal");
 			
-			if (vertical > 0) {
-				animator.SetInteger ("Direction", 2);
-				animator.SetFloat ("Speed", 1.0f);
-			} else if (vertical < 0) {
-				animator.SetInteger ("Direction", 0);
-				animator.SetFloat ("Speed", 1.0f);
-			} else if (horizontal < 0) {
-				animator.SetInteger ("Direction", 1);
-				animator.SetFloat ("Speed", 1.0f);
-			} else if (horizontal > 0) {
-				animator.SetInteger ("Direction", 3);
-				animator.SetFloat ("Speed", 1.0f);
-			} else {
-				animator.SetFloat ("Speed", 0.0f);
+
+				var vertical = Input.GetAxis ("Vertical");
+				var horizontal = Input.GetAxis ("Horizontal");
+				
+				if (vertical > 0) {
+					animator.SetInteger ("Direction", 2);
+					animator.SetFloat ("Speed", 1.0f);
+				} else if (vertical < 0) {
+					animator.SetInteger ("Direction", 0);
+					animator.SetFloat ("Speed", 1.0f);
+				} else if (horizontal < 0) {
+					animator.SetInteger ("Direction", 1);
+					animator.SetFloat ("Speed", 1.0f);
+				} else if (horizontal > 0) {
+					animator.SetInteger ("Direction", 3);
+					animator.SetFloat ("Speed", 1.0f);
+				} else {
+					animator.SetFloat ("Speed", 0.0f);
+				}
 			}
 		}
 	}
+
+	[RFC(5)]
+	void  OnSetTarget (Vector3 pos)
+	{
+		mTarget = pos;
+	}
+
+	void OnNetworkPlayerJoin (Player p)
+	{
+		tno.Send (6, p, transform.position);
+	}
+	
+	[RFC(6)]
+	void OnSetTargetImmediate (Vector3 pos)
+	{
+		transform.position = pos;
+	} 
 
 	void OnCollisionStay2D(Collision2D coll){
 		if(coll.gameObject.tag == "Collide")
