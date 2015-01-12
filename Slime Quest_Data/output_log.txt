@@ -12,64 +12,43 @@ Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Ma
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.060 seconds
+Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.055 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.213392 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 389.
-Total: 2.293537 ms (FindLiveObjects: 0.014226 ms CreateObjectMapping: 0.007113 ms MarkObjects: 1.944712 ms  DeleteObjects: 0.005121 ms)
-
-Health Potion (UnityEngine.GameObject)
+OnCreatedRoom
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-0.4618947
+UnloadTime: 0.588389 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 525.
+Total: 4.121004 ms (FindLiveObjects: 0.042393 ms CreateObjectMapping: 0.022192 ms MarkObjects: 3.433032 ms  DeleteObjects: 0.078243 ms)
+
+OnPhotonPlayerConnected: 'Guest2148'
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-0.4618947
+OnLeftRoom (local)
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Health Potion (UnityEngine.GameObject)
+OnDisconnectedFromPhoton
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-1.879805
+UnloadTime: 2.442045 ms
+Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-1.879805
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Health Potion (UnityEngine.GameObject)
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 375.
+Total: 1.091707 ms (FindLiveObjects: 0.019062 ms CreateObjectMapping: 0.013941 ms MarkObjects: 0.343986 ms  DeleteObjects: 0.062310 ms)
 
-0.3794509
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-0.3794509
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Health Potion (UnityEngine.GameObject)
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1.879805
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1.879805
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Crash!!!

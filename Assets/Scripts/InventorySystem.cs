@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;  //need this to access List
 
-public class InventorySystem : MonoBehaviour 
+public class InventorySystem : Photon.MonoBehaviour 
 {
 	public List<Items> Inventory;  
 	public Items[] Bag;
@@ -12,9 +12,7 @@ public class InventorySystem : MonoBehaviour
 	public GUISkin mySkin;
 	private bool inventoryActive = false;
 	public float maxRange = 0.4f;
-	
 
-	
 	//awake then start then update
 	void Awake () 
 	{
@@ -25,20 +23,23 @@ public class InventorySystem : MonoBehaviour
 	
 	void Update () 
 	{
-		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		
-		if(Input.GetMouseButtonDown(0))
-		{		
-			if (Physics.Raycast(ray,out hit,20))
-			{
-				Debug.Log (hit.collider.gameObject);
-				for (int i= 0; i< Bag.Length; i++)
+		if(photonView.isMine)
+		{
+			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			
+			if(Input.GetMouseButtonDown(0))
+			{		
+				if (Physics.Raycast(ray,out hit,20))
 				{
-					Debug.Log(Vector2.Distance(transform.position,hit.collider.transform.position));
-					if(hit.collider.tag == Bag[i].id.ToString() && Vector2.Distance(transform.position,hit.collider.transform.position) < maxRange)
+					Debug.Log (hit.collider.gameObject);
+					for (int i= 0; i< Bag.Length; i++)
 					{
-						Inventory.Add (Bag[i]);
-						Destroy(hit.collider.gameObject);
+						Debug.Log(Vector2.Distance(transform.position,hit.collider.transform.position));
+						if(hit.collider.tag == Bag[i].id.ToString() && Vector2.Distance(transform.position,hit.collider.transform.position) < maxRange)
+						{
+							Inventory.Add (Bag[i]);
+							Destroy(hit.collider.gameObject);
+						}
 					}
 				}
 			}

@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using UnityEngine;
-using TNet;
-
-
-class GridMove : TNBehaviour 
+public enum PlayerState
 {
-	static public GridMove instance;
+	Idle = 0,
+	WalkLeft = 1,
+	WalkRight = 2,
+	WalkUp = 3,
+	WalkDown = 4,
+}
+
+class GridMove : MonoBehaviour 
+{
+	public PlayerState _characterState;
 
 	private float moveSpeed = 0.5f;
 	private float gridSize = 0.32f;
@@ -29,26 +35,13 @@ class GridMove : TNBehaviour
 
 	public bool stopMovement = false;
 
-	Vector3 mTarget = Vector3.zero;
-	public Vector3 target
-	{
-		set
-		{
-			tno.Send(5, TNet.Target.AllSaved,value);
-		}
-	}
+	public bool isControllable = true;
 
-	void Awake ()
-	{
-		if(TNManager.isThisMyObject)
-		{
-			instance = this;
-		}
-	}
+
 	void Start()
 	{
 		animator = this.GetComponent<Animator>();
-		Camera.main.GetComponent<CameraController>().target = this.gameObject;
+//		Camera.main.GetComponent<CameraController>().target = this.gameObject;
 
 	}
 
@@ -56,7 +49,7 @@ class GridMove : TNBehaviour
 
 	public void Update() 
 	{
-		if (tno.isMine)
+		if (isControllable)
 		{
 			if (!stopMovement)
 			{
@@ -86,40 +79,66 @@ class GridMove : TNBehaviour
 				var horizontal = Input.GetAxis ("Horizontal");
 				
 				if (vertical > 0) {
-					animator.SetInteger ("Direction", 2);
-					animator.SetFloat ("Speed", 1.0f);
+					_characterState = PlayerState.WalkLeft;
+	//				animator.SetInteger ("Direction", 2);
+	//				animator.SetFloat ("Speed", 1.0f);
 				} else if (vertical < 0) {
-					animator.SetInteger ("Direction", 0);
-					animator.SetFloat ("Speed", 1.0f);
+					_characterState = PlayerState.WalkRight;
+	//				animator.SetInteger ("Direction", 0);
+	//				animator.SetFloat ("Speed", 1.0f);
 				} else if (horizontal < 0) {
-					animator.SetInteger ("Direction", 1);
-					animator.SetFloat ("Speed", 1.0f);
+					_characterState = PlayerState.WalkDown;
+	//				animator.SetInteger ("Direction", 1);
+	//				animator.SetFloat ("Speed", 1.0f);
 				} else if (horizontal > 0) {
-					animator.SetInteger ("Direction", 3);
-					animator.SetFloat ("Speed", 1.0f);
+					_characterState = PlayerState.WalkUp;
+	//				animator.SetInteger ("Direction", 3);
+	//				animator.SetFloat ("Speed", 1.0f);
 				} else {
-					animator.SetFloat ("Speed", 0.0f);
+
+					_characterState = PlayerState.Idle;
+	//				animator.SetFloat ("Speed", 0.0f);
 				}
 			}
 		}
-	}
 
-	[RFC(5)]
-	void  OnSetTarget (Vector3 pos)
-	{
-		mTarget = pos;
-	}
+		if (this.isControllable && !isMoving)
+		{
+			animator.SetFloat ("Speed", 0.0f);
+		}
 
-	void OnNetworkPlayerJoin (Player p)
-	{
-		tno.Send (6, p, transform.position);
+		else
+		{
+			if (_characterState == PlayerState.Idle)
+			{
+				animator.SetFloat ("Speed", 0.0f);
+			}
+
+			else if (_characterState == PlayerState.WalkLeft)
+			{
+				animator.SetInteger ("Direction", 2);
+				animator.SetFloat ("Speed", 1.0f);
+			}
+
+			else if (_characterState == PlayerState.WalkRight)
+			{
+				animator.SetInteger ("Direction", 0);
+				animator.SetFloat ("Speed", 1.0f);
+			}
+
+			else if (_characterState == PlayerState.WalkDown)
+			{
+				animator.SetInteger ("Direction", 1);
+				animator.SetFloat ("Speed", 1.0f);
+			}
+
+			else if (_characterState == PlayerState.WalkUp)
+			{
+				animator.SetInteger ("Direction", 3);
+				animator.SetFloat ("Speed", 1.0f);
+			}
+		}
 	}
-	
-	[RFC(6)]
-	void OnSetTargetImmediate (Vector3 pos)
-	{
-		transform.position = pos;
-	} 
 
 	void OnCollisionStay2D(Collision2D coll){
 		if(coll.gameObject.tag == "Collide")
