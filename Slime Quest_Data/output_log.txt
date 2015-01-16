@@ -1,10 +1,11 @@
-Initialize engine version: 4.5.4f1 (e036f44c54c9)
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4475]
+    Renderer: NVIDIA GeForce GTX 780
     Vendor:   NVIDIA
-    VRAM:     2994 MB
+    VRAM:     2994 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -12,27 +13,40 @@ Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Ma
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.055 seconds
+Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\DialogueSystem.dll (this message is harmless)
+Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\DialogueSystem.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\LuaInterpreter.dll (this message is harmless)
+Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\LuaInterpreter.dll into Unity Child Domain
+- Completed reload, in  0.037 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.dll (this message is harmless)
-OnCreatedRoom
+UnloadTime: 0.191200 ms
+ TilesetsAtlasTexture.set: there was an error creating the material asset at 
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.588389 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at CreativeSpore.RpgMapEditor.AutoTileset._support_generateTileparts (UnityEngine.Texture2D tilesetTex, System.String defaultName, Int32 srcX, Int32 srcY, Int32 width, Int32 height, Int32 tileWidth, Int32 tileHeight) [0x00000] in <filename unknown>:0 
+  at CreativeSpore.RpgMapEditor.AutoTileset._GenerateTilesetSprites () [0x00000] in <filename unknown>:0 
+  at CreativeSpore.RpgMapEditor.AutoTileset.GenerateAutoTileData () [0x00000] in <filename unknown>:0 
+  at CreativeSpore.RpgMapEditor.AutoTileMap.Initialize () [0x00000] in <filename unknown>:0 
+  at CreativeSpore.RpgMapEditor.AutoTileMapSerializeData.LoadToMap (CreativeSpore.RpgMapEditor.AutoTileMap _autoTileMap) [0x00000] in <filename unknown>:0 
+  at CreativeSpore.RpgMapEditor.AutoTileMap.LoadMap () [0x00000] in <filename unknown>:0 
+  at CreativeSpore.RpgMapEditor.AutoTileMap.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 525.
-Total: 4.121004 ms (FindLiveObjects: 0.042393 ms CreateObjectMapping: 0.022192 ms MarkObjects: 3.433032 ms  DeleteObjects: 0.078243 ms)
-
-OnPhotonPlayerConnected: 'Guest2148'
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1186.
+Total: 1.185897 ms (FindLiveObjects: 0.054059 ms CreateObjectMapping: 0.013372 ms MarkObjects: 0.688548 ms  DeleteObjects: 0.014795 ms)
 
 OnLeftRoom (local)
  
@@ -42,13 +56,13 @@ OnDisconnectedFromPhoton
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 2.442045 ms
+UnloadTime: 0.758541 ms
 Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 375.
-Total: 1.091707 ms (FindLiveObjects: 0.019062 ms CreateObjectMapping: 0.013941 ms MarkObjects: 0.343986 ms  DeleteObjects: 0.062310 ms)
+Unloading 156 unused Assets to reduce memory usage. Loaded Objects now: 580.
+Total: 2.144459 ms (FindLiveObjects: 0.017355 ms CreateObjectMapping: 0.009958 ms MarkObjects: 0.660950 ms  DeleteObjects: 1.113343 ms)
 
