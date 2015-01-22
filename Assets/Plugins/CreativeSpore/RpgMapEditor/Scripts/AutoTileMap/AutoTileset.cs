@@ -169,7 +169,7 @@ namespace CreativeSpore.RpgMapEditor
 				AssetDatabase.SaveAssets();
 			}
 			#else
-			AtlasMaterial = new Material( Shader.Find("Unlit/Transparent");
+//			AtlasMaterial = new Material( Shader.Find("Unlit/Transparent");
 			#endif
 			
 			if( AtlasMaterial != null )

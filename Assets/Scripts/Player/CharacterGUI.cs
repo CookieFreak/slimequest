@@ -7,18 +7,18 @@ public class CharacterGUI : MonoBehaviour
 {
 	private float currentLevel = 1f;
 	private float currentExp = 0f;
-	private float maxLevel = 20;
-	private float maxExp = 100;
+//	private float maxLevel = 20;
+//	private float maxExp = 100;
 
 	private bool toggleExp = true;
 
-	public int maxHealth = 100;
-	public int curHealth = 100;
+	//public int maxHealth = 100;
+	//public int curHealth = 100;
 	
 //	public int maxMana = 50;
 //	public float curMana = 50;
 
-	public float healthBarLength;
+	//public float healthBarLength;
 //	public float manaBarLength;
 	
 	public GUISkin mySkin;
@@ -26,7 +26,7 @@ public class CharacterGUI : MonoBehaviour
 	
 	void Start () 
 	{
-		healthBarLength = Screen.width / 4;
+	//	healthBarLength = Screen.width / 4;
 //		manaBarLength = Screen.width / 8;
 	
 	}
@@ -43,7 +43,7 @@ public class CharacterGUI : MonoBehaviour
 		GUI.skin = mySkin;
 		
 		
-		GUI.Box(new Rect(10, 30, healthBarLength, 20), curHealth + "/" + maxHealth);
+		//GUI.Box(new Rect(10, 30, healthBarLength, 20), curHealth + "/" + maxHealth);
 		
 //		GUI.Box(new Rect(10,35, manaBarLength, 20),curMana  + "/" + maxMana);
 
@@ -57,7 +57,7 @@ public class CharacterGUI : MonoBehaviour
 		
 	}
 	
-	public void AdjustCurrentHealth(int adj)
+/*	public void AdjustCurrentHealth(int adj)
 	{
 	  curHealth += adj;	
 		

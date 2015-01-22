@@ -15,19 +15,29 @@ Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Ma
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\DialogueSystem.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\DialogueSystem.dll into Unity Child Domain
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\LuaInterpreter.dll (this message is harmless)
 Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\LuaInterpreter.dll into Unity Child Domain
-- Completed reload, in  0.037 seconds
+Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\user\Documents\GitHub\slimequest\Slime Quest_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.191200 ms
+UnloadTime: 0.668914 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 396.
+Total: 0.516410 ms (FindLiveObjects: 0.019347 ms CreateObjectMapping: 0.006828 ms MarkObjects: 0.144822 ms  DeleteObjects: 0.005690 ms)
+
+OnCreatedRoom
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.178680 ms
  TilesetsAtlasTexture.set: there was an error creating the material asset at 
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
@@ -43,10 +53,40 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraScript.OnEnable () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject)
+PhotonNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+PhotonNetwork:Instantiate(String, Vector3, Quaternion, Int32)
+ConnectionManager:Awake()
+ 
+(Filename:  Line: -1)
 
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1186.
-Total: 1.185897 ms (FindLiveObjects: 0.054059 ms CreateObjectMapping: 0.013372 ms MarkObjects: 0.688548 ms  DeleteObjects: 0.014795 ms)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 1135.
+Total: 1.065256 ms (FindLiveObjects: 0.075683 ms CreateObjectMapping: 0.013657 ms MarkObjects: 0.672329 ms  DeleteObjects: 0.005121 ms)
+
+OnPhotonPlayerConnected: 'Guest1683'
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CameraScript.OnEnable () [0x00000] in <filename unknown>:0 
+UnityEngine.Object:INTERNAL_CALL_Internal_InstantiateSingle(Object, Vector3&, Quaternion&)
+UnityEngine.Object:Internal_InstantiateSingle(Object, Vector3, Quaternion)
+UnityEngine.Object:Instantiate(Object, Vector3, Quaternion)
+NetworkingPeer:DoInstantiate(Hashtable, PhotonPlayer, GameObject)
+NetworkingPeer:OnEvent(EventData)
+ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
+ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
+ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
+PhotonHandler:Update()
+ 
+(Filename:  Line: -1)
 
 OnLeftRoom (local)
  
@@ -56,13 +96,13 @@ OnDisconnectedFromPhoton
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.758541 ms
+UnloadTime: 0.746589 ms
 Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 156 unused Assets to reduce memory usage. Loaded Objects now: 580.
-Total: 2.144459 ms (FindLiveObjects: 0.017355 ms CreateObjectMapping: 0.009958 ms MarkObjects: 0.660950 ms  DeleteObjects: 1.113343 ms)
+Unloading 159 unused Assets to reduce memory usage. Loaded Objects now: 549.
+Total: 2.992333 ms (FindLiveObjects: 0.030728 ms CreateObjectMapping: 0.018778 ms MarkObjects: 0.610587 ms  DeleteObjects: 2.030644 ms)
 
