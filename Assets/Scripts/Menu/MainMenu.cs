@@ -35,13 +35,13 @@ public class MainMenu : MonoBehaviour
 			{
 				Application.LoadLevel("Login Screen");
 			}
-			
-			if (GUI.Button (new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200,35), "High Scores"))
+
+			if (GUI.Button (new Rect(Screen.width/2 - 100, Screen.height/2 -50, 200,35), "About the Game"))
 			{
-				clicked = "scores";
+				clicked = "info";
 			}
 			
-			if (GUI.Button (new Rect(Screen.width/2 - 100, Screen.height/2 , 200,35), "Quit Game"))
+			if (GUI.Button (new Rect(Screen.width/2 - 100, Screen.height/2, 200,35), "Quit Game"))
 			{
 				Application.Quit();
 			}
@@ -50,23 +50,13 @@ public class MainMenu : MonoBehaviour
 		else
 		{
 			GUI.Box (new Rect (0,0,Screen.width,Screen.height/2 +500), "Press Esc to go back!");
-			GUI.Label (new Rect (Screen .width/2, Screen.height/2, 300,300), "Score: " + PlayerPrefs.GetInt("collectedMunni"));
+			GUI.Label (new Rect (Screen .width*0.2f, Screen.height*0.1f, 600,300), "In a hidden town, lives a little slime where all neighbors are victims of MMO players. Monsters and animals alike are actually friendly creatures trying to live peacefully. You are to live among and help them with whatever trouble they may have and discover your inner slime.");
 		}  
 	}  
 	
-	/*	private void OptionsFunc (int id)
-	{
-		GUILayout.Box ("Volume");
-		
-		if (GUILayout.Button("Back"))
-		{
-			clicked = "";
-		}
-	}  */
-	
 	private void Update ()
 	{
-		if (clicked == "scores" && Input.GetKey (KeyCode.Escape))  //to go back to the main menu
+		if (clicked == "info" && Input.GetKey (KeyCode.Escape))  //to go back to the main menu
 		{
 			clicked = "";
 		}
